@@ -5,13 +5,13 @@
 class SessionProtect < Formula
   desc "Protect, explore, and command your AI coding-agent sessions"
   homepage "https://github.com/rexovas/session-protect"
-  version "1.2.1"
+  version "1.2.2"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rexovas/session-protect/releases/download/v1.2.1/session-protect_1.2.1_darwin_amd64.tar.gz"
-      sha256 "cb819d78055ee0b719b0676b8b87f72058ac0cc7343280b1c58fdd9dff173fd0"
+      url "https://github.com/rexovas/session-protect/releases/download/v1.2.2/session-protect_1.2.2_darwin_amd64.tar.gz"
+      sha256 "e4a8d0e8f5c17f2dd5627c4e45ec81f04d9a572fc7d1f8936bad363ee2799d96"
 
       define_method(:install) do
         bin.install "session-protect"
@@ -19,8 +19,8 @@ class SessionProtect < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rexovas/session-protect/releases/download/v1.2.1/session-protect_1.2.1_darwin_arm64.tar.gz"
-      sha256 "93d9455f0b0cfd59930b8db4261fdbf2e38a98ba79b703d8553895156131891d"
+      url "https://github.com/rexovas/session-protect/releases/download/v1.2.2/session-protect_1.2.2_darwin_arm64.tar.gz"
+      sha256 "5664e972b8a22424d68e961b56ac25530b9afb0adf6e24a7f01dddeebdc4d37b"
 
       define_method(:install) do
         bin.install "session-protect"
@@ -31,16 +31,16 @@ class SessionProtect < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rexovas/session-protect/releases/download/v1.2.1/session-protect_1.2.1_linux_amd64.tar.gz"
-      sha256 "7dc61517992581fccaaae384b1b2f21e0ed7f9939c4378027481a3f2e696a1f2"
+      url "https://github.com/rexovas/session-protect/releases/download/v1.2.2/session-protect_1.2.2_linux_amd64.tar.gz"
+      sha256 "9767219f072526a0dd0fd6b53525c8bd6e104c62cc71c2eaf2c1e82389d0870c"
       define_method(:install) do
         bin.install "session-protect"
         bin.install_symlink "session-protect" => "sp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rexovas/session-protect/releases/download/v1.2.1/session-protect_1.2.1_linux_arm64.tar.gz"
-      sha256 "1cb9af1f82138c9568fbd41c073f3825ab1140f27b6ddf335a7c444e473eb15a"
+      url "https://github.com/rexovas/session-protect/releases/download/v1.2.2/session-protect_1.2.2_linux_arm64.tar.gz"
+      sha256 "6d6cbe3739e4edb4f1347ec5048d3f90a35644c8b5ea4236cf7a0724bdc86f2c"
       define_method(:install) do
         bin.install "session-protect"
         bin.install_symlink "session-protect" => "sp"
