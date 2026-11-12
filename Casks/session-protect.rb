@@ -2,25 +2,25 @@
 cask "session-protect" do
   binary "session-protect", target: "sp"
 
-  version "1.4.0"
+  version "1.4.1"
 
   on_macos do
     on_arm do
-      sha256 "3cffc91d74112383b62a99af5fafe8a9bd5c48ea554a07292d2829c14c2808ef"
+      sha256 "33bf28dabf6788feed9499a01626235eea17510f901b6350cce990b3d01fc995"
       url "https://github.com/rexovas/session-protect/releases/download/v#{version}/session-protect_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "5c02878ebe49853be0760907d0833e2508b8fdbd94ba91667f56ac6506bef262"
+      sha256 "f6bba4305336fd6b92ac799e96e57a35c8516282ee2479dc3bdb2b2f438a5569"
       url "https://github.com/rexovas/session-protect/releases/download/v#{version}/session-protect_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "6742b0de6a64df70ed7c49f57e4497da69171978de1f8c75a8b2cf46f64f8f00"
+      sha256 "1f7c51aa507c3412da4c8fdc580ebe4b905accb8437cf1c6c328d2d56e38f70f"
       url "https://github.com/rexovas/session-protect/releases/download/v#{version}/session-protect_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "5cddd554e1d128cc4304df87b30225b600dda6364118aaa16f039ed498e70048"
+      sha256 "7c4e009873aeaa9832915afcb40c42c996c2bac44af1be3743fe88f9452f8b70"
       url "https://github.com/rexovas/session-protect/releases/download/v#{version}/session-protect_#{version}_linux_amd64.tar.gz"
     end
   end
@@ -41,5 +41,5 @@ cask "session-protect" do
     end
   end
 
-  # No zap stanza required
+  zap :not_required
 end
